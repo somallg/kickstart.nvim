@@ -196,6 +196,12 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Buffers management
+vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Prev Buffer' })
+vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next Buffer' })
+vim.keymap.set('n', '[b', '<cmd>bprevious<CR>', { desc = 'Prev Buffer' })
+vim.keymap.set('n', ']b', '<cmd>bnext<CR>', { desc = 'Next Buffer' })
+
 -- Use CTRL+<s> to save
 vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<CR><Esc>', { desc = 'Save File' })
 
