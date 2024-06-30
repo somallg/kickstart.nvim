@@ -610,8 +610,9 @@ require('lazy').setup({
             },
           },
         },
+        marksman = {},
         solargraph = {},
-        terraformls  = {},
+        terraformls = {},
         vtsls = {},
         yamlls = {},
       }
