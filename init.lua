@@ -609,6 +609,7 @@ require('lazy').setup({
           },
         },
         terraformls = {},
+        vtsls = {},
       }
 
       -- Ensure the servers and tools above are installed
