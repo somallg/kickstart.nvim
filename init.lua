@@ -608,6 +608,7 @@ require('lazy').setup({
             },
           },
         },
+        prettier = {},
         terraformls = {},
         vtsls = {},
       }
