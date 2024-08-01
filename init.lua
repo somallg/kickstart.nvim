@@ -608,7 +608,7 @@ require('lazy').setup({
             },
           },
         },
-        prettier = {},
+        prettierd = {},
         terraformls = {},
         vtsls = {},
       }
@@ -663,6 +663,7 @@ require('lazy').setup({
       format_on_save = false,
       formatters_by_ft = {
         lua = { 'stylua' },
+        yaml = { 'prettierd' }
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
