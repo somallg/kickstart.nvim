@@ -199,7 +199,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Keybinds to save file
 vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<CR><Esc>', { desc = 'Save File' })
 
--- Keybinds to quite
+-- Keybinds to quit
 vim.keymap.set('n', '<leader>qq', '<cmd>qa<CR>', { desc = 'Quit All' })
 
 -- [[ Basic Autocommands ]]
