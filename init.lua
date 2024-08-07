@@ -594,6 +594,7 @@ require('lazy').setup({
         -- tsserver = {},
         --
 
+        bashls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
