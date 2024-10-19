@@ -653,7 +653,7 @@ require('lazy').setup({
             },
           },
         },
-        solargraph = {},
+        ruby_lsp = {},
         terraformls = {},
         vtsls = {},
         yamlls = {},
