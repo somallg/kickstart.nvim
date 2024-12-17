@@ -634,6 +634,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        jsonls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -648,6 +649,11 @@ require('lazy').setup({
             },
           },
         },
+        marksman = {},
+        solargraph = {},
+        terraformls = {},
+        vtsls = {},
+        yamlls = {},
       }
 
       -- Ensure the servers and tools above are installed
