@@ -844,6 +844,9 @@ require('lazy').setup({
           { name = 'luasnip' },
           { name = 'path' },
         },
+        experimental = {
+          ghost_text = true,
+        },
       }
     end,
   },
