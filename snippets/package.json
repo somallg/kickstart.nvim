@@ -9,8 +9,11 @@
         "path": "./markdown.json"
       },
       {
-        "language": "typescript",
-        "path": "./typescript.json"
+        "language": [
+          "javascript",
+          "typescript"
+        ],
+        "path": "./javascript.json"
       }
     ]
   }
