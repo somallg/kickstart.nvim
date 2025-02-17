@@ -1,7 +1,26 @@
 {
-  "Fori loop": {
+  "Describe": {
+    "prefix": "desc",
+    "body": ["describe('Input: ${1}', function () {", "\t${0}", "});"],
+    "description": "Insert describe block"
+  },
+  "For i in range(0, n) loop": {
     "prefix": "fori",
-    "body": ["for (let i = ${1:0}; i < ${2:n}; i += 1) {", "\t$0", "}"],
-    "description": "Fori loop"
+    "body": ["for (let i = ${1:0}; i < ${2:n}; i += 1) {", "\t${0}", "}"],
+    "description": "For i in range(0, n) loop"
+  },
+  "Function expression with single param i": {
+    "prefix": "fni",
+    "body": ["function (${1:i}) {", "\t${0}", "}"],
+    "description": "Function expression with single param i"
+  },
+  "It": {
+    "prefix": "it",
+    "body": [
+      "it('Output: ${1}', function () {",
+      "\texpect(${2}).toEqual(${0});",
+      "});"
+    ],
+    "description": "Insert it block"
   }
 }
