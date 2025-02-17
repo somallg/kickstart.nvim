@@ -156,11 +156,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Configure treesitter-based folding
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-vim.opt.foldtext = ''
-vim.opt.foldlevel = 99
+-- Configure folding
+vim.opt.foldenable = true -- enable fold for nvim-ufo
+vim.opt.foldlevel = 99 -- set high foldlevel for nvim-ufo
+vim.opt.foldlevelstart = 99 -- start with all code unfolded
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -961,7 +960,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
