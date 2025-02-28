@@ -685,6 +685,7 @@ require('lazy').setup({
             },
           },
         },
+        vtsls = {},
       }
 
       -- Ensure the servers and tools above are installed
