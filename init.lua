@@ -794,6 +794,9 @@ require('lazy').setup({
           --   end,
           -- },
         },
+        config = function()
+          require('luasnip.loaders.from_vscode').lazy_load { paths = { './snippets' } }
+        end,
       },
       'saadparwaiz1/cmp_luasnip',
 
