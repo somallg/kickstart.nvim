@@ -695,6 +695,7 @@ require('lazy').setup({
           },
         },
         marksman = {},
+        pyright = {},
         terraformls = {},
         vtsls = {},
         yamlls = {},
