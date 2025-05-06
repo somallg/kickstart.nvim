@@ -676,6 +676,9 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        ansiblels = {},
+        bashls = {},
+        jsonls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -690,6 +693,11 @@ require('lazy').setup({
             },
           },
         },
+        marksman = {},
+        pyright = {},
+        terraformls = {},
+        vtsls = {},
+        yamlls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -707,6 +715,8 @@ require('lazy').setup({
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
+        'black',
+        'prettier',
         'stylua', -- Used to format Lua code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
