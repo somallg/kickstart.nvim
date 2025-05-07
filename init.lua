@@ -772,6 +772,7 @@ require('lazy').setup({
         json = { 'prettier' },
         markdown = { 'prettier' },
         python = { 'black' },
+        terraform = { 'terraform_fmt' },
         typescript = { 'prettier' },
         yaml = { 'prettier' },
       },
