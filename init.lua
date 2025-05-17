@@ -710,7 +710,9 @@ require('lazy').setup({
         pyright = {},
         terraformls = {},
         vtsls = {},
-        yamlls = {},
+        yamlls = {
+          filetypes = { 'yaml', 'yaml.ansible', 'yaml.docker-compose', 'yaml.gitlab' },
+        },
       }
 
       -- Ensure the servers and tools above are installed
