@@ -166,6 +166,13 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- Enable Treesitter-based folding
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldtext = ''
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
