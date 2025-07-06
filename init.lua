@@ -167,7 +167,7 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- Disable command line
-vim.o.cmdheight=0
+vim.o.cmdheight = 0
 
 -- Enable Treesitter-based folding
 vim.o.foldmethod = 'expr'
