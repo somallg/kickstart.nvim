@@ -172,6 +172,9 @@ vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.o.foldtext = ''
 vim.o.foldlevel = 99
 
+-- Disable Copilot
+vim.g.copilot_enabled = false
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
