@@ -696,6 +696,11 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        ansiblels = {},
+        docker_compose_language_service = {},
+        dockerls = {},
+        bashls = {},
+        jsonls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -710,6 +715,11 @@ require('lazy').setup({
             },
           },
         },
+        marksman = {},
+        pyright = {},
+        terraformls = {},
+        vtsls = {},
+        yamlls = {},
       }
 
       -- Ensure the servers and tools above are installed
